@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Raspberry Pi projects page">
+    <meta name="keywords" content="Raspberry Pi,projects,education,practice">
+    <meta name="author" content="khaleel raweh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <img  id="earthImage" src="images/earth.jpg">
+      <h1 id="heading" ><a onclick="change_heading()">Climate change</a></h1>
+      <!--
+      <ul style='float:right'>
+        <li>Deforestation</li>
+        <li>Air Pollution</li>
+        <li>Wildfires</li>
+      </ul>
+      <div style='clear:both'></div>
+      -->
+    </header>
+  
+    <hr>
+    <section>
+      <p>This page will highlight some issues to do with
+         Climate change around the world</p>
+      
+      <div class="container">
+        <h2>Deforestation</h2>
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/ape-4273153_1920.jpeg" alt="Deforestation image">
+        <blockquote>“Many of you appear concerned that we are wasting valuable lesson 
+        time, but I assure you we will go back to school the moment you start listening
+        to science and give us a future.” <span>Source:<a href="https://www.greenmatters.com/p/best-quotes-from-greta-thunbergs-speech-to-the-house-of-parliament">https://www.greenmatters.com/p/best-quotes-from-greta-thunbergs-speech-to-the-house-of-parliament</a></span></blockquote>
+        <p style="display:none" id="appear_def_paragraph">Trees has the unique talent of absorbing carbon dioxide, a greenhouse gas that is responsible for warming our planet. In return, oxygen is released.</p>
+         <button  id="btn_def" onClick="myFunc(this.id);">More info...</button>
+      </div>
+      
+      <div class="container">
+        <h2>Air Pollution</h2>
+        <img src="https://www.planetaryhealth.ox.ac.uk/wp-content/uploads/sites/7/2018/11/Mumbai_Smog-1030x424.jpg" alt="air poluttion image">
+        <blockquote>“Although two thirds of our planet is water, we face an acute water
+        shortage. The water crisis is the most pervasive , most severe, and most invisible
+        dimension of the ecological devastation of the earth.”<span>Water Wars: Fight to the Last Drop (South End Press, 2002)</span></blockquote>
+        <p style="display:none" id="appear_air_paragraph">Because of rising temperatures around the world, forests are drier for longer. A slight spark can spread ferociously!Because of the released carbon, the on-going inferno becomes even more difficult to tackle. Because of the released carbon, the on-going inferno becomes even more difficult to tackle.</p>
+        <button type="button" id="btn_air" onClick="myFunc(this.id);">More info...</button>
+      </div>
+      
+      <div class="container">
+        <h2>Wildfires</h2>
+        <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/Califire_1280p_2.jpg?itok=iaZtnRHR" alt="wildfires">
+        <blockquote>“At first I thought I was fighting to save rubber trees, then I thought
+        I was fighting to save the Amazon rainforest. Now I realize I am fighting for humanity.”<span>Source:<a href="https://en.wikipedia.org/wiki/Chico_Mendes"> (https://en.wikipedia.org/wiki/Chico_Mendes)</a></span></blockquote>
+        <p style="display:none" id="appear_wild_paragraph">Because of a lack of oxygen and an increase of carbon dioxide, harmful and fatal health conditions are on the rise in our daily lives.Once again, it is an endless cycle as not only chemicals from air pollutions not only contribute to climate change, but becomes stronger and deadlier because of it!</p>
+        <button type="button" id="btn_wild" onClick="myFunc(this.id);">More info...</button>
+      </div>
+      
+      
+      <div class="container">
+        
+        <h2>My Location</h2>
+        
+        <div id="googleMap"> </div>
+        
+      </div>
+    </section>
+    
+    <a href="pages/Quiz.html">This like revered to Quiz page</a>
+    
+    <footer>
+      
+      <h2>Related links</h2>
+      <ul>
+        <li><a href="https://indiaenvironment.org/" target="_blank">Environmentalist Foundation</a></li>
+        <li><a href="https://www.greenmatters.com/p/best-quotes-from-greta-thunbergs-speech-to-the-house-of-parliament">Deforestation</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Chico_Mendes">Wildfires</a></li>
+        <li><a href="https://trinket.io/html/b681682beb/index.html">Climate change webpage</a></li>
+  
+      </ul>
+    </footer>
+    
+    <script src='js/script.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo6to-g-yzm8R94ZQMyqj7E-BUwI7Qr9s&callback=myMap"></script>
+  </body>
+</html>

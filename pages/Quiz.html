@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz page</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    
+    <header>
+      <img  id="earthImage" src="../images/earth.jpg">
+      <h1>Climate Quiz</h1>
+    </header>
+    
+      <hr>
+    
+    <section>
+      <form name="Quiz">
+        
+        <div class="container">
+          <h2>input Buttons</h2>
+          
+          Full name: 
+          
+          <input id="fullname" name="fullname" type="text" placeholder="Type your name" size="50" onkeyup="say_hello()">
+          <div id="Welcome">
+    
+          </div>
+         
+        </div>
+        
+        <div class="container">
+          <h2>Radio Buttons</h2>
+          
+          <p> What country has the most CO2 emissions in 2017?.</p>
+          
+          <input type="radio" name="answerq1" value="Russia"> Russia <br>
+          <input type="radio" name="answerq1" value="USA"> USA<br>
+          <input type="radio" name="answerq1" value="China"> China<br>
+          
+          <p> What do trees aborb?.</p>
+          
+          <input type="radio" name="answerq2" value="oxygen"> Oxygen<br>
+          <input type="radio" name="answerq2" value="warmth"> Warmth<br>
+          <input type="radio" name="answerq2" value="carbon dioxide"> Carbon dioxide<br>
+          
+          <p> Who is responsible for the destruction of the world?.</p>
+          
+          <input type="radio" name="answerq3" value="human"> Human <br>
+          <input type="radio" name="answerq3" value="animals"> Animals<br>
+          <input type="radio" name="answerq3" value="trees"> Trees<br>
+          
+          <p> What is the cause of drier forests.</p>
+          
+          <input type="radio" name="answerq4" value="higher_temperatures"> Higher temperatures<br>
+          <input type="radio" name="answerq4" value="lower_temperatures"> Lower temperatures<br>
+          <input type="radio" name="answerq4" value="rain"> Rain<br>
+        </div>
+        
+        <div class="container">
+          <h2>Number Input</h2>
+    
+          <p>When the user hovers the cursor on the answer field up and down arrows appear to select a number.</p>
+          
+          How many countries have signed the Paris Agreement? <input type="number" id="numb" name="parisagreement" min="0" max="1000" step="20">
+        </div>
+        <div class="container">
+          <button type="button" onclick="checkAnswers()" >Submit</button>
+        </div>
+      </form> 
+    </section>
+    <footer>
+      <p> The source is from <a href="https://www.weforum.org/agenda/2019/06/chart-of-the-day-these-countries-create-most-of-the-world-s-co2-emissions/">The World Economic Forum</a></p>
+        
+      <a href="../index.html">Visit our Home page</a>
+    </footer>
+
+  <script src="../js/script.js"></script>
+  </body>
+</html>
